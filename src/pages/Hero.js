@@ -4,7 +4,6 @@ function Hero() {
     return (
         <div className="container__hero">
             <section className="hero">
-            <div className="hero--with-photo"></div>
             <header className="header__hero">
                 <h1 className="title-hero">
                     Crunchi

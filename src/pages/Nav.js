@@ -3,7 +3,7 @@ import "../styles/Nav.css"
 
 // SVGS
 import { RxHamburgerMenu } from "react-icons/rx";
-import { CiMedal, CiSearch, CiShoppingCart, CiShoppingTag, CiUser } from "react-icons/ci";
+import { CiMedal, CiSearch, CiShoppingCart, CiUser } from "react-icons/ci";
 
 function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -29,29 +29,30 @@ function Nav() {
                     aria-controls="supple-links__nav"
                 >
                 <RxHamburgerMenu />
-            </button>
-             <div id="supple-links__nav" className={`supple-links ${menuOpen ? "is-open" : ""}`} aria-hidden={!menuOpen}>
-                <a href="#!">
-                    <span className="link-svg"><CiSearch /></span>
-                    Search
-                </a>
-                <a href="#!">
-                    <span className="link-svg"><CiUser /></span>
-                    Account
-                </a>
-                <a href="#!">
-                    <span className="link-svg"><CiShoppingCart /></span>
-                    Cart
-                </a>
-                <a href="#!">
-                    <span className="link-svg"><CiMedal /></span>
-                    Rewards
-                </a>
-                <a href="#!">
-                    <span className="link-svg"><CiShoppingTag /></span>
-                    Deals
-                </a>
-            </div>
+                </button>
+               
+                    <div id="supple-links__nav" className={`supple-links dropdown ${menuOpen ? "is-open" : ""}`} aria-hidden={!menuOpen}>
+                        <a href="#!">
+                            <span className="link-svg"><CiSearch /></span>
+                            Search
+                        </a>
+                            <div className="link-divider"></div>
+                        <a href="#!">
+                            <span className="link-svg"><CiUser /></span>
+                            Account
+                        </a>
+                          <div className="link-divider"></div>
+                        <a href="#!">
+                            <span className="link-svg"><CiShoppingCart /></span>
+                            Cart
+                        </a>
+                          <div className="link-divider"></div>
+                        <a href="#!">
+                            <span className="link-svg"><CiMedal /></span>
+                            Rewards
+                        </a>
+                          <div className="link-divider"></div>
+                    </div>
             </nav>
         </div>
     );

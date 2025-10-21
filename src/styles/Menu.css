@@ -92,23 +92,19 @@
 }
 .menu-item:hover .img-wrap img{ scale: 1.03; }
 
-.badges{
-  position: absolute; inset: 10px auto auto 10px; right: 5%;
-  display: flex; gap: .4rem; flex-wrap: wrap;
-}
 .badge{
   font-size: .72rem;
   font-weight: 900;
   letter-spacing: .04em;
   padding: .35rem .55rem;
-  border-radius: 999px;
+  border-radius: 99px;
   color: #fff;
   text-transform: uppercase;
   box-shadow: 0 8px 16px rgba(0,0,0,.12);
 }
-.badge.popular{ background: linear-gradient(90deg, #ffb703, #ff9100); border: none; padding: .55rem 1.2rem; }
-.badge.spicy{ background: linear-gradient(90deg, var(--chili-700), var(--ketchup)); border: none; padding: .55rem 1.2rem; }
-.badge.new{ background: linear-gradient(90deg, #19c37d, #24e29b); border: none; padding: .55rem 1.2rem; }
+.badge.popular{ background: linear-gradient(90deg, #ffb703, #ff9100); border: none; padding: .95rem 1.2rem; }
+.badge.spicy{ background: linear-gradient(90deg, var(--chili-700), var(--ketchup)); border: none; padding: .95rem 1.2rem; }
+.badge.new{ background: linear-gradient(90deg, #19c37d, #24e29b); border: none; padding: .95rem 1.2rem; }
 
 /* Name */
 .item-name{

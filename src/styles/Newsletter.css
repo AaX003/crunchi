@@ -112,7 +112,7 @@
   outline: none;
 }
 
-/* Subtle wiggle if you want playful energy */
+
 .subscribe-btn:active {
   transform: scale(0.97);
 }
@@ -137,7 +137,15 @@
 @media (min-width: 375px) {
     #nl-email {
         width: 100%;
-        max-width: 300px;
+        max-width: 200px;
+    }
+    .newsletter-container {
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      place-self: center;
+    }
+    .newsletter-subtitle {
+      text-wrap: balance;
+      max-width: 360px;
     }
 }
 @media (min-width: 412px) {

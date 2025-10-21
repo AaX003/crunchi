@@ -107,16 +107,6 @@
   }
 }
 
-/* Stack of cards (left column) */
-.about-display > .about-cards{
-  /* will be placed individually via JSX map; ensure consistent sizing */
-}
-.about-display > .about-cards:nth-child(1),
-.about-display > .about-cards:nth-child(2),
-.about-display > .about-cards:nth-child(3){
-  /* nothing special; keeps simple */
-}
-
 /* Stats (right column) */
 .stats{
   list-style: none;
@@ -145,18 +135,15 @@
   font-weight: 700;
 }
 
-/* Make the three cards grid nicely on narrow screens */
+/* three cards grid on narrower screens */
 @media (max-width: 759px){
   .about-display{
     grid-template-columns: 1fr;
   }
-  .about-cards{
-    /* full width stack */
-  }
 }
 
 
-/* Nice little divider under About header */
+/* Divider (beneath aboutsection) */
 .hero__about .title__hero{
   position: relative;
   padding-bottom: 1rem;

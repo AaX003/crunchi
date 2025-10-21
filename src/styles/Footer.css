@@ -1,6 +1,4 @@
-/* ================================
-   Footer — Crunchi
-   ================================ */
+/* ====Footer===== */
 :root{
   --chili-600:#e21d2e;
   --chili-700:#c71324;
@@ -145,7 +143,7 @@
   color: var(--ash);
 }
 
-/* ======= Contact Form panel ======= */
+/* ======= Contact Form  ======= */
 .container__form{
   background: var(--paper);
   width: 100%;
@@ -233,6 +231,12 @@
 }
 
 /* ======= Responsive ======= */
+@media (min-width: 320px) {
+  #email {
+    width: 100%;
+    max-width: 230px;
+  }
+}
 @media (min-width: 344px) {
     .container__footer {
         width: 120%;

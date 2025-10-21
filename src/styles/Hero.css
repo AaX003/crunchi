@@ -1,7 +1,3 @@
-body {
-    overflow-x: hidden;
-}
-
 /* ============= Hero ============= */
 :root{
   --chili-600:#e21d2e; /* brand red */
@@ -83,38 +79,16 @@ body {
 }
 .view-menu-btn:hover,
 .view-menu-btn:focus-visible{
-  transform: translateY(-1px);
   box-shadow: 0 20px 34px rgba(226,29,46,.32);
   filter: saturate(1.1);
   outline: none;
 }
 
-/* hero image */
-.hero--with-photo{
-  background-image: url("../images/hero-chicken.jpg");
-  background-size: cover;        /* fills the box */
-  background-position: center;   /* centers subject */
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 45vh;                 /* fills viewport height */
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.4;
-  filter: brightness(0.4) hue-rotate(300deg);
-  
-}
 
-
-/* Responsive niceties */
-@media (min-width: 344px) {
-    .hero--with-photo {
-        width: 200%;
-    }
-}
+/* Responsiveness */
 @media (min-width: 375px) {
     .subtitle-hero, .view-menu-btn {
-        font-size: .75rem;
+        font-size: 1.2rem;
     }
 }
 @media (min-width: 540px) {
